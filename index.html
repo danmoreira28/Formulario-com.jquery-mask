@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Endereço</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@100&family=Bebas+Neue&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Formulário Endereço</h1>
+    </header>
+    <form>
+        <div class="form-campo">
+            <label for="nome">Nome:</label>
+            <input type="text" required id="nome" placeholder="Nome Completo">
+        </div>
+        <div class="form-campo">
+            <label for="email">E-mail:</label>
+            <input type="email" required id="email" placeholder="E-mail">
+        </div>
+        <div class="form-campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" required id="telefone" placeholder="(00) 0000-0000">
+        </div>
+        <div class="form-campo">
+            <label for="cpf">CPF:</label>
+            <input type="tel" required id="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="form-campo">
+            <label for="endereco">Endereço:</label>
+            <input type="text" required id="endereco" placeholder="Endereço">
+        </div>
+        <div class="form-campo">
+            <label for="cep">CEP:</label>
+            <input type="tel" required id="cep" placeholder="00000-000">
+        </div>
+        
+        <button id="btn-enviar" type="submit">Enviar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000')
+            $('#cep').mask('00000-000')
+            $('#cpf').mask('000.000.000-00')
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    padding: 16px;
+}
+
+
+form{
+    padding: 16px;
+}
+
+form input{
+    display: block;
+    padding: 6px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    width: 400px;
+}
+
+form button{
+    font-weight: normal;
+    font-size: 18px;
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom: 16px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
